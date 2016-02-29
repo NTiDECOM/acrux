@@ -1,5 +1,7 @@
 class ModalitiesController < ApplicationController
 
+  before_action :authenticate_user!
+
   def index
     @modalities = Modality.all
   end
