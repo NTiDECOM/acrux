@@ -16,6 +16,13 @@
         <li class="<%= is_active? 'modalities' %>"><%= link_to 'Modalidades Artísticas', modalities_path %></li>
         <li class="<%= is_active? 'institutions' %>"><%= link_to 'Instituições', institutions_path %></li>
       </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+        <li>
+          <%= link_to 'Sair', destroy_user_session_path, method: :delete %>
+        </li>
+        <% end %>
+      </ul>
     </div><!--/.nav-collapse -->
   </div>
 </nav>
