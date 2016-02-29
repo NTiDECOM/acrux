@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   resources :artists
   resources :modalities
+  resources :institutions
 end

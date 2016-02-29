@@ -1,0 +1,19 @@
+<%= form_for @institution do |f| %>
+  <div class="row">
+    <div class="form-group col-md-4">
+      <%= f.label :name, 'Nome' %>
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-md-5">
+      <%= f.label :address, 'Endereço' %>
+      <%= f.text_field :address, class: 'form-control' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-md-12">
+      <%= f.submit 'Salvar', class: 'btn btn-primary btn-lg' %>
+    </div>
+  </div>
+<% end %>
