@@ -6,6 +6,8 @@ class ArtistsController < ApplicationController
 
   def new
     @artist = Artist.new
+    @modalities = Modality.all
+    @institutions = Institution.all
   end
 
   def show
@@ -14,6 +16,8 @@ class ArtistsController < ApplicationController
 
   def edit
     @artist = Artist.find(params[:id])
+    @modalities = Modality.all
+    @institutions = Institution.all
   end
 
   def create
@@ -52,7 +56,12 @@ class ArtistsController < ApplicationController
     :phone,
     :email,
     :group,
-    :has_production
+    :has_production,
+    :modality_id,
+    :institution_id,
+    :production_description,
+    :other_information,
+    :note
     )
   end
 

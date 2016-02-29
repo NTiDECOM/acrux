@@ -1,4 +1,4 @@
 class Artist < ActiveRecord::Base
-  has_one :institution
-  has_one :modality
+  belongs_to :institution
+  belongs_to :modality
 end
