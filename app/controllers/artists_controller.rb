@@ -3,7 +3,7 @@ class ArtistsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @artists = Artist.all
+    @artists = Artist.order(:name)
   end
 
   def new
