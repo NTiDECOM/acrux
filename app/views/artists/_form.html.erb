@@ -45,7 +45,7 @@
     <div class="form-group col-md-4">
       <div class="row">
         <div class="col-md-12">
-          <label>Já tem produzido CD, DVD ou Livro?</label>
+          <label>Já tem alguma produção realizada?</label>
           <br />
           <%= f.radio_button :has_production, 'true', :value => true %>
           <%= f.label :has_production, 'Sim' %>
@@ -58,7 +58,7 @@
   </div>
   <div class="row">
     <div class="form-group col-md-6">
-      <%= f.label :production_description, 'Descreva as produções, caso existam' %>
+      <%= f.label :production_description, 'Descreva as produções realizadas, caso existam' %>
       <%= f.text_area :production_description, class: 'form-control', rows: 3 %>
     </div>
   </div>
